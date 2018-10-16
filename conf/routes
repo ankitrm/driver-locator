@@ -1,0 +1,10 @@
+# @formatter:off
+
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Health
+GET     /health                               com.xyz.transport.driverlocator.controllers.Application.health
+PUT     /drivers/:id/location                 com.xyz.transport.driverlocator.controllers.DriverLocationController.saveDriverLocation(id:Long)
+GET     /drivers/:lat/:lng                    com.xyz.transport.driverlocator.controllers.DriverLocationController.getNearestDrivers(lat:Double, lng: Double, limit: Integer ?= 10, radius: Long ?= 500)

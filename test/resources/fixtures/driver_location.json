@@ -1,0 +1,11 @@
+{
+  "id": 4,
+  "geoloc": {
+    "coordinates": [
+      2.0,
+      1.0
+    ],
+    "type": "Point"
+  },
+  "accuracy": 2.0
+}
